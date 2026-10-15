@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Understanding Your GCK Result | Patient Guide</title>
+<style>
+:root{--bg:#0c1118;--panel:#151e29;--panel2:#1b2734;--ink:#e9eef4;--muted:#a4b0c0;--line:#344456;--mint:#67e0b3;--mint2:#17372f;--coral:#f6a76d;--coral2:#3b2b23;--blue:#263e50}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,"Segoe UI",Arial,sans-serif}
+.wrap{width:min(1120px,calc(100% - 32px));margin:0 auto}.top{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:25px 0 16px;color:#9baabd;font:700 11px/1.4 ui-monospace,Consolas,monospace;letter-spacing:.14em}.tag,.eyebrow{display:inline-block;border:1px solid #416277;background:var(--blue);color:var(--mint);border-radius:4px;padding:5px 9px;font:700 10px/1.5 ui-monospace,Consolas,monospace;letter-spacing:.12em}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:stretch;padding:36px 0 30px}.hero h1{font-size:clamp(38px,6vw,68px);line-height:1.02;letter-spacing:-.055em;margin:16px 0}.hero h1 em{color:var(--mint);font-style:normal}.lead{font-size:19px;color:#c1ccd8;max-width:680px}.note,.fine{font-size:13px;color:var(--muted)}.hero-card,.card,.section-intro{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:24px;box-shadow:0 8px 24px #0003}.path{display:grid;gap:12px;margin-top:18px}.path div{padding:12px;background:#101720;border:1px solid #2b3a49;border-radius:6px;color:#cbd5df}.path b{color:var(--mint);font:700 11px ui-monospace,monospace;margin-right:10px}
+.nav{display:flex;flex-wrap:wrap;gap:8px;padding:14px 0 26px;border-bottom:1px solid var(--line)}.nav a{color:#c1ccd8;text-decoration:none;border:1px solid var(--line);border-radius:5px;padding:8px 11px;font-size:13px}.nav a:hover{border-color:var(--mint);color:var(--mint)}
+section{padding:38px 0 10px;scroll-margin-top:12px}.section-head{display:grid;grid-template-columns:1fr .8fr;gap:24px;align-items:start;margin-bottom:18px}.section-no{font:700 11px ui-monospace,monospace;letter-spacing:.16em;color:var(--mint)}h2{font-size:clamp(27px,3.6vw,40px);line-height:1.1;letter-spacing:-.035em;margin:8px 0 10px}h3{font-size:21px;line-height:1.25;margin:12px 0 10px}p{margin:9px 0 14px;color:#c1ccd8}.muted{color:var(--muted)}.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.card{padding:22px}.card p:last-child{margin-bottom:0}.label{display:inline-block;background:#263e50;border:1px solid #416277;color:var(--mint);border-radius:4px;padding:5px 9px;font:700 10px ui-monospace,monospace;letter-spacing:.12em}.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:8px;align-items:stretch;margin-top:18px}.flowbox{background:#101720;border:1px solid #334454;border-radius:7px;padding:15px}.flowbox b{display:block;color:#f3f7fb;margin-bottom:5px}.arrow{align-self:center;color:var(--mint);font-size:22px}.small{font-size:13px}.highlight{color:var(--mint);font-weight:700}.warning{border-left:3px solid var(--coral);padding:12px 14px;background:#211b18;border-radius:0 6px 6px 0;color:#f0d4c1}.good{border-left:3px solid var(--mint);padding:12px 14px;background:#14251f;border-radius:0 6px 6px 0;color:#c7eadd}
+.mutation-line{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:15px 0}.base{display:inline-grid;place-items:center;min-width:42px;height:44px;border-radius:5px;background:#23394b;border:1px solid #3c6074;color:#9cebd0;font-size:19px;font-weight:800}.base.variant{background:#4a3026;border-color:#b8784e;color:#ffd0aa}.music-switches{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0 12px}.music-choice{font:inherit;text-align:left;cursor:pointer;background:var(--panel2);color:var(--ink);border:1px solid #3d5063;border-radius:7px;padding:15px}.music-choice strong,.choice-kicker,.choice-note{display:block}.choice-kicker{font-size:10px;letter-spacing:.1em;font-weight:800;color:var(--muted);margin-bottom:5px}.choice-note{font-size:12px;color:var(--muted);margin-top:4px}.music-choice.active{background:var(--mint2);border:2px solid var(--mint)}.music-choice.mutant.active{background:var(--coral2);border:2px solid var(--coral)}.music-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:12px 0}.btn{font:inherit;cursor:pointer;border:1px solid var(--mint);background:var(--mint);color:#10201d;border-radius:5px;padding:9px 14px;font-weight:700}.btn.secondary{background:#253140;color:var(--ink);border-color:#46586a}.status{font-size:12px;color:var(--muted)}.music-score{background:linear-gradient(#6d8ea610 1px,transparent 1px),linear-gradient(90deg,#6d8ea610 1px,transparent 1px),#101720;background-size:22px 22px;border:1px solid #394b5c;border-radius:7px;padding:12px}.score-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 2px}.score-row+.score-row{border-top:1px solid #334454}.score-label{font-size:11px;font-weight:800;color:var(--muted);min-width:105px}.pill{display:inline-flex;align-items:center;justify-content:center;border-radius:4px;padding:7px 11px;background:#23394b;color:#9cebd0;border:1px solid #3c6074;font-weight:800}.pill.changed{background:#4a3026;color:#ffd0aa;border-color:#b8784e}.sep{color:var(--muted)}.score-explain{font-size:12px;color:var(--muted)}
+.accordion{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:7px;padding:17px 18px;text-align:left;font:700 16px/1.4 inherit;cursor:pointer;margin:8px 0}.accordion span:last-child{color:var(--mint);font-size:22px}.answer{display:none;padding:4px 18px 18px;border:1px solid var(--line);border-top:0;border-radius:0 0 7px 7px;background:#111821;margin-top:-9px;margin-bottom:12px}.answer.open{display:block}.list{padding-left:20px;color:#c1ccd8}.list li{margin:7px 0}.footer{display:flex;justify-content:space-between;gap:24px;border-top:1px solid var(--line);margin-top:44px;padding:24px 0 35px;color:var(--muted);font-size:12px}.footer b{color:var(--ink)}
+@media(max-width:760px){.hero,.section-head,.grid-2{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}.flow{grid-template-columns:1fr}.arrow{transform:rotate(90deg);justify-self:center}.hero{padding-top:20px}.top{align-items:flex-start;flex-direction:column}.score-label{min-width:100%}.footer{flex-direction:column}.music-switches{grid-template-columns:1fr}}
+
+/* Animated arrangement lanes: green chord clips drift right-to-left like a prepared score playing */
+body{
+ background-color:#10151b;
+ background-image:
+ radial-gradient(ellipse at 12% 0%, rgba(77,139,133,.20), transparent 35%),
+ radial-gradient(ellipse at 92% 14%, rgba(180,111,72,.13), transparent 29%),
+ linear-gradient(rgba(130,158,178,.055) 1px, transparent 1px),
+ linear-gradient(90deg, rgba(130,158,178,.055) 1px, transparent 1px);
+ background-size:auto,auto,32px 32px,32px 32px;
+}
+body:after{
+ content:"";
+ position:fixed;
+ z-index:-1;
+ pointer-events:none;
+ top:0;right:0;bottom:0;left:0;
+ opacity:.22;
+ background:
+ repeating-linear-gradient(90deg,transparent 0 68px,rgba(142,228,195,.07) 68px 70px,transparent 70px 140px),
+ repeating-linear-gradient(0deg,transparent 0 82px,rgba(142,228,195,.04) 82px 84px,transparent 84px 164px);
+ mask-image:linear-gradient(to bottom,black,transparent 78%);
+}
+.arrangement-ambient{
+ position:fixed;
+ top:0;left:0;width:100%;height:100vh;
+ z-index:-1;pointer-events:none;overflow:hidden;
+ opacity:.25;
+ mask-image:linear-gradient(to bottom,black,transparent 82%);
+}
+.arrangement-ambient .lane{
+ position:absolute;left:0;right:0;height:22px;
+ border-top:1px solid rgba(142,228,195,.13);
+ border-bottom:1px solid rgba(142,228,195,.07);
+ overflow:hidden;
+}
+.arrangement-ambient .clip-stream{
+ position:absolute;left:0;top:4px;height:12px;width:200%;
+ display:flex;gap:12px;
+ animation:scoreDrift 32s linear infinite;
+}
+.arrangement-ambient .clip{
+ flex:0 0 86px;height:12px;border-radius:3px;
+ background:linear-gradient(90deg,rgba(87,203,157,.08),rgba(103,224,179,.68),rgba(87,203,157,.18));
+ box-shadow:0 0 12px rgba(103,224,179,.13);
+}
+.arrangement-ambient .clip:nth-child(3n){flex-basis:48px;opacity:.65}
+.arrangement-ambient .clip:nth-child(4n){flex-basis:120px;opacity:.8}
+.arrangement-ambient .clip:nth-child(5n){background:linear-gradient(90deg,rgba(103,224,179,.12),rgba(103,224,179,.36))}
+/* Ambient notes vary in duration and pitch, like a loose MIDI arrangement rather than repeated chords */
+.arrangement-ambient .lane{
+  height:34px;
+  overflow:visible;
+  border-top-color:rgba(142,228,195,.07);
+  border-bottom-color:rgba(142,228,195,.035);
+}
+.arrangement-ambient .clip-stream{
+  top:0;
+  height:100%;
+  align-items:stretch;
+  overflow:visible;
+}
+.arrangement-ambient .clip{
+  position:relative;
+  height:var(--note-height,7px);
+  min-height:4px;
+  margin-top:var(--note-y,12px);
+  border-radius:2px 5px 3px 2px;
+  transform-origin:center;
+  animation:noteDrift var(--note-speed,6.4s) ease-in-out infinite;
+  animation-delay:var(--note-delay,0s);
+  will-change:transform,opacity;
+}
+.arrangement-ambient .clip:nth-child(6n+1){--note-height:5px;--note-y:4px;--note-speed:7.1s;--note-delay:-2.3s}
+.arrangement-ambient .clip:nth-child(6n+2){--note-height:12px;--note-y:18px;--note-speed:5.7s;--note-delay:-.8s}
+.arrangement-ambient .clip:nth-child(6n+3){--note-height:6px;--note-y:9px;--note-speed:8.2s;--note-delay:-4.1s}
+.arrangement-ambient .clip:nth-child(6n+4){--note-height:15px;--note-y:2px;--note-speed:6.1s;--note-delay:-3.2s}
+.arrangement-ambient .clip:nth-child(6n+5){--note-height:4px;--note-y:23px;--note-speed:7.8s;--note-delay:-1.4s}
+.arrangement-ambient .clip:nth-child(6n){--note-height:9px;--note-y:13px;--note-speed:5.3s;--note-delay:-4.7s}
+@keyframes noteDrift{
+  0%,100%{transform:translateY(0) rotate(-.5deg) scaleX(1);opacity:.4}
+  28%{transform:translateY(-4px) rotate(1.4deg) scaleX(1.1);opacity:.8}
+  57%{transform:translateY(3px) rotate(-1.6deg) scaleX(.94);opacity:.55}
+  82%{transform:translateY(-1px) rotate(.7deg) scaleX(1.04);opacity:.88}
+}
+@media(prefers-reduced-motion:reduce){
+  .arrangement-ambient .clip{animation:none}
+}
+
+@keyframes scoreDrift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){
+ .arrangement-ambient .clip-stream{animation:none}
+}
+
+/* Compact DAW-style layout: remove chord-tone text; MIDI view sits at right */
+.music-editor-layout{display:grid;grid-template-columns:minmax(250px,.85fr) minmax(350px,1.15fr);gap:16px;align-items:stretch}
+.music-editor-left{min-width:0;display:flex;flex-direction:column;justify-content:center}
+.music-editor-left .score-row{padding:12px 4px}
+.music-editor-left .score-label{min-width:105px}
+.chord-progression-row{gap:8px}
+.midi-side-panel{min-width:0;padding:10px;background:rgba(10,17,24,.78);border:1px solid #34495b;border-radius:7px;box-sizing:border-box}
+.midi-side-head{display:flex;align-items:center;gap:7px;margin-bottom:7px;color:#8fa7ba;font:700 9px ui-monospace,Consolas,monospace;letter-spacing:.1em}
+.midi-side-sub{font:400 10px system-ui,sans-serif;letter-spacing:0;text-transform:none;color:#91a2b2}
+.midi-live-dot{width:6px;height:6px;border-radius:50%;background:#67e0b3;box-shadow:0 0 8px #67e0b3}
+.midi-side-roll{display:grid;grid-template-columns:27px minmax(0,1fr);gap:4px}
+.midi-side-labels{display:grid;grid-template-rows:repeat(9,14px);padding-top:17px;color:#93a7b9;font:8px/14px ui-monospace,Consolas,monospace;text-align:right}
+.midi-side-grid{min-width:0}
+.midi-side-headrow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));height:17px;color:#b9c7d4;font:700 8px/17px ui-monospace,Consolas,monospace;text-align:center}
+.midi-side-headrow span{border-left:1px solid #35485a;background:#172330;overflow:hidden;white-space:nowrap}
+.midi-side-lane{height:14px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:repeating-linear-gradient(90deg,transparent 0 calc(25% - 1px),#334454 calc(25% - 1px) 25%),repeating-linear-gradient(0deg,#111b26 0 13px,#263544 13px 14px);border-bottom:1px solid #263544}
+.midi-side-lane i{display:block;align-self:center;justify-self:center;width:72%;height:7px;border-radius:2px;background:transparent}
+.midi-side-lane i.on{background:#67e0b3;border:1px solid #a2f4d8}
+.midi-side-lane i.variant-note{background:#f6a76d;border:1px solid #ffd0aa}
+@media(max-width:850px){.music-editor-layout{grid-template-columns:1fr}.midi-side-panel{width:100%}}
+
+/* Three contrasting MIDI-style composition cards */
+.composition-showcase{margin:26px 0 34px;padding:22px;border:1px solid var(--line);border-radius:10px;background:linear-gradient(135deg,rgba(24,35,46,.96),rgba(17,26,36,.98));color:#e9f0f5}
+.composition-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,.9fr);gap:22px;align-items:end;margin-bottom:18px}
+.composition-heading .eyebrow{font:700 10px/1.4 ui-monospace,Consolas,monospace;letter-spacing:.15em;color:#73dcb5;margin-bottom:8px}
+.composition-heading h3{font-size:clamp(20px,2vw,27px);line-height:1.2;margin:0;color:#f2f6f8}
+.composition-heading p{font-size:13px;line-height:1.6;margin:0;color:#aebdca}
+.composition-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.composition-card{min-width:0;border:1px solid #354657;border-radius:8px;background:#111b26;padding:15px;display:flex;flex-direction:column}
+.composition-card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.composition-index{font:700 11px ui-monospace,Consolas,monospace;color:#70dfb5}
+.composition-tag{font:700 9px ui-monospace,Consolas,monospace;letter-spacing:.12em;color:#9aabba;border:1px solid #354657;border-radius:3px;padding:4px 6px}
+.composition-card h4{font-size:16px;margin:0 0 6px;color:#f1f5f7}
+.composition-card p{font-size:12px;line-height:1.5;color:#aebdca;margin:0 0 14px;min-height:36px}
+.mini-roll{height:85px;border:1px solid #2b3b4a;border-radius:5px;overflow:hidden;background:repeating-linear-gradient(0deg,transparent 0 13px,#253442 13px 14px),repeating-linear-gradient(90deg,transparent 0 calc(12.5% - 1px),#253442 calc(12.5% - 1px) 12.5%),#0e1721;margin-bottom:14px}
+.mini-roll-grid{height:100%;position:relative}
+.mini-roll-grid i{position:absolute;left:var(--left);top:var(--top);height:7px;width:var(--width);border-radius:2px;background:#66dfb4;box-shadow:0 0 7px #66dfb42b}
+.lively-roll i{background:#8ce5c7}
+.swing-roll i:nth-child(even){background:#9cc9ff}
+.composition-play{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:auto;padding:9px 12px;border:1px solid #4c6c68;border-radius:5px;background:#203b37;color:#baf5df;font:600 12px system-ui,sans-serif;cursor:pointer}
+.composition-play:hover{background:#2b5148}.composition-play:focus-visible{outline:2px solid #75e5bc;outline-offset:3px}
+.composition-play[aria-pressed="true"]{background:#67dfb3;color:#10251f;border-color:#67dfb3}
+.composition-footnote{font-size:11px;line-height:1.6;color:#9aaab7;margin:15px 0 0}
+.composition-status{font:11px ui-monospace,Consolas,monospace;color:#73dcb5;margin-top:9px}
+@media(max-width:760px){.composition-heading{grid-template-columns:1fr;gap:10px}.composition-grid{grid-template-columns:1fr}.composition-card p{min-height:0}.mini-roll{height:72px}}
+
+/* Layout correction: make the MODY intro and composition showcase span the full content width */
+#mody .mody-section-head{display:block;max-width:none;margin-bottom:18px}
+#mody .mody-section-head>div{max-width:100%}
+#mody .mody-section-head p{max-width:100%}
+#mody .composition-showcase{width:100%;max-width:none;margin:24px 0 28px}
+#mody .composition-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
+#mody .composition-card{width:100%;min-width:0}
+#mody .mody-bottom-grid{width:100%;margin-top:18px}
+@media(max-width:760px){#mody .composition-grid{grid-template-columns:1fr}}
+
+/* Refined hero: full-width editorial title area without the summary card */
+.hero{display:block;position:relative;overflow:hidden;padding:clamp(30px,5vw,68px) clamp(22px,5vw,64px);margin:0 0 24px;border:1px solid #304454;border-radius:12px;background:linear-gradient(90deg,rgba(102,223,180,.045) 1px,transparent 1px),linear-gradient(rgba(102,223,180,.045) 1px,transparent 1px),radial-gradient(ellipse at 82% 8%,rgba(102,223,180,.12),transparent 38%),linear-gradient(120deg,#151f2a 0%,#111923 58%,#171d25 100%);background-size:32px 32px,32px 32px,auto,auto}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg,#66dfb3 0%,#66dfb3 22%,transparent 72%);opacity:.9}
+.hero>div:first-child{position:relative;z-index:1;max-width:900px}
+.hero .eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:20px;color:#76e4bc;font:700 11px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.18em;text-transform:uppercase}
+.hero .eyebrow:before{content:"";display:inline-block;width:24px;height:2px;background:#66dfb3}
+.hero h1{max-width:900px;margin:0;font-size:clamp(42px,7.5vw,88px);line-height:.98;letter-spacing:-.055em;font-weight:800;color:#f0f5f7}
+.hero h1 em{color:#66dfb3;font-style:normal;text-shadow:0 0 28px rgba(102,223,180,.12)}
+.hero .lead{max-width:760px;margin:24px 0 0;font-size:clamp(16px,1.8vw,20px);line-height:1.65;color:#c1ccd5}
+.hero .note{display:flex;align-items:flex-start;gap:10px;max-width:700px;margin:16px 0 0;font-size:12px;line-height:1.6;color:#8fa1af}
+.hero .note:before{content:none;display:none}
+@media(max-width:700px){.hero{padding:30px 22px}.hero h1{font-size:clamp(39px,12vw,58px)}.hero .lead{margin-top:18px}}
+
+/* Condition-comparison cards: room for clinical wording while keeping the three columns aligned */
+.composition-card h4{line-height:1.3;min-height:2.6em}
+.composition-card p{min-height:88px}
+.composition-card .composition-tag{max-width:58%;text-align:center}
+@media(max-width:760px){.composition-card h4{min-height:0}.composition-card p{min-height:0}}
+
+/* Compact composition section after removing explanatory copy */
+.compositions-section .section-header{margin-bottom:12px}
+.compositions-section .section-description,
+.compositions-section .composition-footnote{display:none}
+.compositions-section .composition-grid{margin-top:10px}
+.compositions-section{padding-bottom:20px}
+
+/* Combined variant + GCK mechanism module: use the available width efficiently */
+.genetic-gck-combined{margin-top:0}
+.genetic-gck-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start}
+.genetic-variant-panel,.genetic-mechanism-panel{min-width:0}
+.genetic-variant-panel{padding-right:22px;border-right:1px solid var(--line, #314252)}
+.genetic-gck-grid h3{margin-top:10px}
+.genetic-gck-grid p{margin-top:12px}
+.genetic-gck-grid .flow{margin-top:16px}
+.genetic-gck-grid .warning{margin-top:12px}
+@media(max-width:760px){
+ .genetic-gck-grid{grid-template-columns:1fr;gap:20px}
+ .genetic-variant-panel{padding-right:0;padding-bottom:20px;border-right:0;border-bottom:1px solid var(--line, #314252)}
+}
+
+/* Collapsible genetic-result detail panel */
+.genetic-details{margin-top:16px;border:1px solid var(--line, #314252);border-radius:12px;background:rgba(15,24,34,.72);overflow:hidden}
+.genetic-details>summary{cursor:pointer;list-style:none;padding:17px 20px;font-weight:750;color:var(--text, #e8eef4);display:flex;align-items:center;justify-content:space-between;gap:16px}
+.genetic-details>summary::-webkit-details-marker{display:none}
+.genetic-details>summary::after{content:"+";font-size:1.35rem;line-height:1;color:var(--accent, #62dfb8)}
+.genetic-details[open]>summary::after{content:"−"}
+.genetic-details>summary:hover{background:rgba(98,223,184,.06)}
+.genetic-details-content{padding:0 16px 16px}
+.genetic-details-content>.genetic-gck-combined{margin-top:0}
+.genetic-details-content>.music-card{margin-top:14px!important}
+@media(max-width:760px){.genetic-details>summary{padding:14px}.genetic-details-content{padding:0 10px 10px}}
+
+/* Keep the score analogy and MIDI player visible; collapse only the detailed genetics. */
+.standalone-music-card{margin-top:16px!important}
+.standalone-music-card>h3{margin-top:8px}
+.music-explanation-card{margin-top:14px;background:rgba(255,255,255,.025)}
+.genetic-details-content>.genetic-gck-combined{margin-top:0}
+.genetic-details-content>.music-explanation-card{margin-top:14px}
+
+.genetic-result-summary{margin:0 0 14px}
+.genetic-result-summary p{margin:0;line-height:1.65}
+.genetic-explanation-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.genetic-explanation-item{margin:0;min-width:0}
+.genetic-explanation-item h3{margin:0 0 8px;font-size:1rem}
+.genetic-explanation-item p{margin:0;line-height:1.55}
+@media(max-width:900px){.genetic-explanation-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.genetic-explanation-grid{grid-template-columns:1fr}}
+
+.genetic-result-body{margin:16px 0 20px;color:#f5f8fc;font-size:clamp(1.08rem,1.35vw,1.3rem);line-height:1.65;font-weight:500}.genetic-result-body strong{font-weight:800}
+ /* Visual hierarchy: make the genetic result the focus, not the disclosure label. */
+.genetic-result-summary {
+ padding: 24px 26px;
+}
+.genetic-result-summary p {
+ margin: 0;
+ color: #f5f8fc;
+ font-size: clamp(1.08rem, 1.35vw, 1.3rem);
+ line-height: 1.65;
+ font-weight: 650;
+ letter-spacing: 0.005em;
+}
+.genetic-details > summary {
+ color: #9baab9;
+ font-size: 0.82rem;
+ font-weight: 500;
+ letter-spacing: 0.015em;
+}
+
+/* Stronger visual contrast between regular copy and highlighted genetic terms */
+.genetic-result-body {
+ color: #c5cfda;
+ font-weight: 400;
+}
+.genetic-result-body strong {
+ color: #f5f8fc;
+ font-weight: 900;
+ text-shadow: 0 0 0.35px currentColor;
+}
+
+/* Keep selected section headings on one line on wider screens */
+#result .section-head h2,
+#mody .section-head h2 {
+ white-space: nowrap;
+}
+@media (max-width: 600px) {
+ #result .section-head h2,
+ #mody .section-head h2 {
+ white-space: normal;
+ }
+}
+
+.mody-explanation-details{margin-top:14px;border:1px solid var(--line, #314252);border-radius:12px;background:rgba(15,24,34,.72);overflow:hidden}
+.mody-explanation-details>summary{cursor:pointer;list-style:none;padding:15px 18px;color:var(--muted, #a4b0c0);font-size:.92rem;font-weight:650;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.mody-explanation-details>summary::-webkit-details-marker{display:none}
+.mody-explanation-details>summary::after{content:"+";font-size:1.25rem;line-height:1;color:var(--accent, #62dfb8)}
+.mody-explanation-details[open]>summary::after{content:"−"}
+.mody-explanation-content{padding:0 18px 14px}
+.mody-explanation-content p{margin:12px 0;color:var(--text, #e8eef4);line-height:1.65}
+
+
+.next-section-intro{
+  margin: 12px 0 22px;
+  max-width: 100%;
+  color: #c1ccd8;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* A contrasting melodic line weaving between the chord blocks */
+.arrangement-ambient .clip.melody-note{
+  background:linear-gradient(90deg,rgba(246,190,104,.28),rgba(255,211,137,.82));
+  border:1px solid rgba(255,211,137,.48);
+  box-shadow:0 0 10px rgba(255,190,104,.10);
+  z-index:2;
+}
+.arrangement-ambient .clip.melody-note:nth-of-type(3n+1){--note-height:5px;--note-y:5px;--note-speed:6.8s;--note-delay:-1.2s}
+.arrangement-ambient .clip.melody-note:nth-of-type(3n+2){--note-height:7px;--note-y:16px;--note-speed:5.9s;--note-delay:-3.5s}
+.arrangement-ambient .clip.melody-note:nth-of-type(3n){--note-height:4px;--note-y:24px;--note-speed:7.6s;--note-delay:-2.1s}
+
+
+/* Responsive ambient MIDI field: keep the notes distributed across the viewport.
+   The stream no longer translates off-screen, so the background cannot run empty. */
+.arrangement-ambient{
+  position:fixed;
+  inset:0;
+  width:100%;
+  height:100vh;
+  height:100dvh;
+  overflow:hidden;
+  pointer-events:none;
+}
+.arrangement-ambient .lane{
+  position:absolute;
+  left:0;
+  right:0;
+  width:100%;
+  max-width:100%;
+  overflow:hidden;
+}
+.arrangement-ambient .clip-stream{
+  position:absolute;
+  left:0;
+  right:auto;
+  top:0;
+  width:max(200%, 1800px);
+  height:100%;
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-around;
+  gap:clamp(4px, 1.2vw, 14px);
+  overflow:visible;
+  will-change:transform;
+  animation:ambient-drift-left 42s linear infinite;
+}
+@keyframes ambient-drift-left{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+.arrangement-ambient .clip{
+  flex:0 1 clamp(10px, 4.8vw, 64px);
+  min-width:4px;
+  max-width:clamp(10px, 4.8vw, 64px);
+  margin-right:0;
+}
+@media (max-width: 700px){
+  .arrangement-ambient .lane{height:28px}
+  .arrangement-ambient .clip-stream{gap:clamp(3px, 1vw, 8px)}
+  .arrangement-ambient .clip{flex-basis:clamp(7px, 4vw, 30px);max-width:clamp(7px, 4vw, 30px)}
+}
+@media (max-width: 420px){
+  .arrangement-ambient .lane{height:24px}
+  .arrangement-ambient .clip-stream{gap:3px}
+  .arrangement-ambient .clip{flex-basis:clamp(6px, 3.5vw, 16px);max-width:clamp(6px, 3.5vw, 16px)}
+}
+
+
+/* Keep these two requested headings on a single line on desktop. */
+#health .section-head h2 {
+  white-space: nowrap;
+  font-size: clamp(1.45rem, 2.4vw, 2.15rem);
+  letter-spacing: -0.025em;
+}
+#mody-compositions .composition-heading h3 {
+  white-space: nowrap;
+  font-size: clamp(1.15rem, 2vw, 1.65rem);
+  letter-spacing: -0.02em;
+}
+@media (max-width: 680px) {
+  #health .section-head h2,
+  #mody-compositions .composition-heading h3 {
+    white-space: normal;
+  }
+}
+
+
+/* Keep the GCK result explanation collapsible and visually understated. */
+.genetic-summary-details > summary {
+  color: #9baab9;
+  font-size: 0.82rem;
+  font-weight: 400;
+  letter-spacing: 0.015em;
+}
+.genetic-summary-details .genetic-result-summary {
+  padding: 20px 22px;
+}
+.genetic-summary-details .genetic-result-body,
+.genetic-summary-details .genetic-result-summary p {
+  color: #c5cfda;
+  font-size: 1rem;
+  line-height: 1.65;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.genetic-summary-details .genetic-result-body strong,
+.genetic-summary-details .genetic-result-summary strong {
+  color: inherit;
+  font-weight: 400;
+  text-shadow: none;
+}
+
+
+/* Slightly reduce only the requested music-analogy subtitle */
+.smaller-music-subtitle {
+  font-size: 21px !important;
+  line-height: 1.25 !important;
+}
+
+
+/* Number each main section heading in sequence */
+#patient .section-head h2::before { content: "01 / "; }
+#result .section-head h2::before { content: "02 / "; }
+#mody .section-head h2::before { content: "03 / "; }
+#health .section-head h2::before { content: "04 / "; }
+#next .section-head h2::before { content: "05 / "; }
+
+#patient .section-head h2::before,
+#result .section-head h2::before,
+#mody .section-head h2::before,
+#health .section-head h2::before,
+#next .section-head h2::before {
+  color: #67e0b3;
+  font-weight: 600;
+  letter-spacing: 0.035em;
+}
+
+
+/* Add breathing room after the final section so the page does not feel cramped. */
+main.wrap {
+  padding-bottom: 72px;
+}
+footer {
+  margin-bottom: 24px;
+}
+
+</style>
+</head>
+<body>
+<div class="arrangement-ambient" aria-hidden="true">
+ <div class="lane" style="top:13vh"><div class="clip-stream"><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i></div></div>
+ <div class="lane" style="top:31vh"><div class="clip-stream melody-note" style="animation-duration:43s;animation-delay:-17s"><i class="clip"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i></div></div>
+ <div class="lane" style="top:52vh"><div class="clip-stream" style="animation-duration:37s;animation-delay:-9s"><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i></div></div>
+ <div class="lane" style="top:74vh"><div class="clip-stream"><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i><i class="clip"></i><i class="clip"></i><i class="clip melody-note"></i></div></div>
+</div>
+<main class="wrap">
+
+<div class="top"><span>PATIENT GUIDE</span></div>
+<header class="hero">
+<div><h1>Your blood glucose.<br><em>Your genes.</em></h1><p class="lead">BIOL3205/6205 Creative Piece by Zihan Xia</p></div>
+</header>
+<nav class="nav">
+<a href="#patient">Meet the Patient</a>
+<a href="#result">Understanding Your Genetic “Score”</a>
+<a href="#mody">What Is MODY?</a>
+<a href="#health">What Does This Mean for Your Health?</a>
+<a href="#next">What Can We Do Next?</a>
+</nav>
+
+<section id="patient">
+<div class="section-head"><div><h2>Meet the Patient</h2></div></div>
+<div class="grid-2">
+<article class="card"><span class="label">PATIENT PROFILE</span><h3>Your health journey</h3><p>You are a 22-year-old university student studying music. Your health journey has included gestational diabetes in both pregnancies, persistently elevated fasting blood glucose levels, and a diagnosis of Hashimoto’s disease three years ago. You have also been diagnosed with atypical MODY.</p></article>
+<article class="card"><span class="label">FAMILY HISTORY</span><h3>A shared pattern in your family</h3><p>All three of your siblings have elevated fasting blood glucose levels and borderline HbA1c results, despite having different lifestyles. Further family studies may help clarify the underlying cause and inheritance pattern.</p></article>
+</div></section>
+<section id="result">
+<div class="section-head"><div><h2>Understanding Your Genetic “Score”</h2></div></div>
+<details class="genetic-details genetic-summary-details">
+ <summary>Click to look at the explanation of your genetic testing result</summary>
+ <div class="genetic-details-content">
+  <div class="card genetic-result-summary">
+   <p class="genetic-result-body">Your genetic test found a change in one of your two copies of the GCK gene, which provides instructions for making glucokinase, an enzyme that helps your pancreas sense blood sugar and regulate insulin release (Delvecchio et al., 2020). The change, called c.208+3A&gt;G, is located in an intron, a section normally removed during RNA processing. Computer predictions suggest it may affect RNA splicing, which helps prepare RNA instructions for making a protein, but this has not been confirmed experimentally (Haliloglu et al., 2016). The notation p.(?) means that the effect on the protein is unknown. Your result is classified as a variant of uncertain significance (VUS), so it does not yet prove that this genetic change causes your elevated blood sugar or your atypical MODY diagnosis.</p>
+  </div>
+ </div>
+</details>
+<div class="card music-card standalone-music-card" style="margin-top:16px"><span class="label">MUSIC ANALOGY / REFERENCE VS VARIANT</span><p>Think of your gene as a musical score. Imagine that one note in a chord has been changed. This could alter the chord’s sound and musical function. It might affect how the instructions are read, but we do not yet know whether it actually changes the final result.</p>
+<h3>Compare the score: A → G</h3>
+<div class="music-switches"><button class="music-choice active" id="normalBtn" type="button" aria-pressed="true"><span class="choice-kicker">REFERENCE / NORMAL EXAMPLE</span><strong>A at this position</strong><span class="choice-note">Play the reference progression</span></button><button class="music-choice" id="mutantBtn" type="button" aria-pressed="false"><span class="choice-kicker">VARIANT EXAMPLE</span><strong>G at this position</strong><span class="choice-note">One illustrative chord changes</span></button></div>
+<div class="music-controls"><button class="btn" id="playMusicBtn" type="button">▶ Play reference</button><button class="btn secondary" id="stopMusicBtn" type="button">Stop</button><span class="status" id="musicStatus" aria-live="polite">Ready to play</span></div>
+<div class="music-score">
+ <div class="music-editor-layout">
+ <div class="music-editor-left">
+ <div class="score-row dna-row">
+ <span class="score-label">DNA letter</span>
+ <span class="base" id="dnaLetter">A</span>
+ <span class="score-explain" id="dnaExplain">Reference letter</span>
+ </div>
+ <div class="score-row chord-progression-row">
+ <span class="score-label">Chord progression</span>
+ <span class="pill">Am</span><span class="sep">→</span>
+ <span class="pill changed" id="changedChord">C</span><span class="sep">→</span>
+ <span class="pill">G</span><span class="sep">→</span><span class="pill">Am</span>
+ </div>
+ </div>
+ <div class="midi-side-panel" aria-label="Illustrative MIDI chord progression">
+ <div class="midi-side-head"><span>MIDI ARRANGEMENT</span><span class="midi-live-dot"></span><span class="midi-side-sub">notes shown as blocks</span></div>
+ <div class="midi-side-roll">
+ <div class="midi-side-labels"><span>G4</span><span>F4</span><span>E4</span><span>Eb4</span><span>D4</span><span>C4</span><span>B3</span><span>A3</span><span>G3</span></div>
+ <div class="midi-side-grid">
+ <div class="midi-side-headrow"><span>1 · Am</span><span id="midiChord2">2 · C</span><span>3 · G</span><span>4 · Am</span></div>
+ <div class="midi-side-lane" data-pitch="G4"><i></i><i></i><i></i><i></i></div>
+ <div class="midi-side-lane" data-pitch="F4"><i></i><i></i><i></i><i></i></div>
+ <div class="midi-side-lane" data-pitch="E4"><i class="on"></i><i class="on"></i><i></i><i class="on"></i></div>
+ <div class="midi-side-lane" data-pitch="Eb4"><i></i><i></i><i></i><i></i></div>
+ <div class="midi-side-lane" data-pitch="D4"><i></i><i></i><i class="on"></i><i></i></div>
+ <div class="midi-side-lane" data-pitch="C4"><i class="on"></i><i class="on"></i><i></i><i class="on"></i></div>
+ <div class="midi-side-lane" data-pitch="B3"><i></i><i></i><i class="on"></i><i></i></div>
+ <div class="midi-side-lane" data-pitch="A3"><i class="on"></i><i></i><i></i><i class="on"></i></div>
+ <div class="midi-side-lane" data-pitch="G3"><i></i><i></i><i class="on"></i><i></i></div>
+ </div>
+ </div>
+ </div>
+ </div>
+</div>
+<p class="fine">However, this variant is classified as a <strong>variant of uncertain significance (VUS)</strong>. This means there is not enough evidence to determine whether it causes disease or is harmless. Although you have been diagnosed with atypical MODY, we cannot conclude that this particular GCK variant is responsible for your elevated fasting blood glucose levels.</p>
+</section>
+<section id="mody">
+ <div class="section-head mody-section-head">
+ <div>
+ 
+ <h2>What Is MODY?</h2>
+<p>Like different musical compositions, different types of MODY can have different characteristics and clinical effects.</p>
+<details class="mody-explanation-details">
+ <summary>Click to read more about MODY</summary>
+ <div class="mody-explanation-content">
+ <p>MODY stands for <em>Maturity-Onset Diabetes of the Young</em>. It is a group of uncommon forms of diabetes caused by disease-related changes in a single gene that affect how the body regulates blood glucose (Shields et al., 2012).</p>
+ <p>Unlike type 1 diabetes, which is usually caused by an autoimmune attack on insulin-producing cells, or type 2 diabetes, which often involves insulin resistance, MODY results from changes in a single gene (Roglic, 2016; Delvecchio et al., 2020).</p>
+ <p>Understanding which type of MODY a person has can help the healthcare team choose the most appropriate treatment and monitoring plan.</p>
+ </div>
+</details>
+
+ </div>
+ </div>
+
+ <div class="composition-showcase" id="mody-compositions">
+ <div class="composition-heading">
+ <div>
+ <div class="eyebrow">LISTEN / THREE MUSICAL STYLES</div>
+ <h3 class="smaller-music-subtitle">Different notes, different “scores” and “performances”</h3>
+ </div>
+ 
+ </div>
+ <div class="composition-grid">
+ <article class="composition-card">
+ <div class="composition-card-top"><span class="composition-index">01</span></div>
+ <h4>Type 1 diabetes — Lively / Intense</h4>
+ <p><b>Type 1 diabetes</b> usually involves the immune system attacking insulin-producing beta cells.</p>
+ <div class="mini-roll" aria-label="MIDI illustration of a lively melody with leaps"><div class="mini-roll-grid lively-roll"><i style="--x:2;--y:5"></i><i style="--x:14;--y:4"></i><i style="--x:26;--y:5"></i><i style="--x:38;--y:4"></i><i style="--x:50;--y:4"></i><i style="--x:62;--y:5"></i><i style="--x:74;--y:4"></i><i style="--x:86;--y:5"></i></div></div>
+ <button class="composition-play" type="button" data-style="lively"><span aria-hidden="true">▶</span> Play phrase</button>
+ </article>
+ <article class="composition-card">
+ <div class="composition-card-top"><span class="composition-index">02</span></div>
+ <h4>Type 2 diabetes — Steady</h4>
+ <p><b>Type 2 diabetes</b> often involves the body becoming less responsive to insulin, alongside changes in insulin production.</p>
+ <div class="mini-roll" aria-label="MIDI illustration of a calm, steady melody"><div class="mini-roll-grid calm-roll"><i style="--x:2;--y:7"></i><i style="--x:14;--y:2"></i><i style="--x:26;--y:6"></i><i style="--x:38;--y:1"></i><i style="--x:50;--y:5"></i><i style="--x:62;--y:2"></i><i style="--x:74;--y:7"></i><i style="--x:86;--y:3"></i></div></div>
+ <button class="composition-play" type="button" data-style="calm"><span aria-hidden="true">▶</span> Play phrase</button>
+ </article>
+ <article class="composition-card">
+ <div class="composition-card-top"><span class="composition-index">03</span></div>
+ <h4>MODY — Swung</h4>
+ <p><b>MODY</b> results from a disease-related change in a single gene that affects how the body regulates blood glucose.</p>
+ <div class="mini-roll" aria-label="MIDI illustration of a swung melody"><div class="mini-roll-grid swing-roll"><i style="--x:2;--y:5"></i><i style="--x:17;--y:4"></i><i style="--x:29;--y:5"></i><i style="--x:44;--y:3"></i><i style="--x:56;--y:4"></i><i style="--x:71;--y:6"></i><i style="--x:83;--y:4"></i></div></div>
+ <button class="composition-play" type="button" data-style="swing"><span aria-hidden="true">▶</span> Play phrase</button>
+ </article>
+ </div>
+ <p class="composition-footnote"></p>
+ <div class="composition-status" id="compositionStatus" aria-live="polite">Choose a style to listen.</div>
+ </div>
+</section>
+<section id="health">
+<div class="section-head"><div><h2>What Does This Mean for Your Health?</h2></div></div>
+<div class="grid-3 health-card-grid">
+<article class="card health-card"><span class="label">BLOOD GLUCOSE</span><h3>Long-term blood glucose risks</h3><p>Persistently elevated blood glucose may increase the risk of long-term complications, depending on the degree of hyperglycaemia and the underlying condition. Confirmed GCK-MODY is generally associated with mild, stable hyperglycaemia and a low risk of diabetes-related complications (Delvecchio et al., 2020). However, because your GCK variant is currently classified as a VUS, your specific long-term risks cannot be determined from this result alone.</p></article>
+<article class="card health-card"><span class="label">PREGNANCY</span><h3>Pregnancy-related risks</h3><p>If you plan another pregnancy, early consultation with your healthcare team will be important. In confirmed GCK-MODY, pregnancy management may depend on both the mother’s and the fetus’s GCK genotype, as the fetal genotype can influence fetal growth. Your management plan should be individualised, particularly because your genetic result is not yet conclusive (Delvecchio et al., 2020).</p></article>
+<article class="card health-card"><span class="label">THYROID</span><h3>Thyroid health</h3><p>You also have Hashimoto’s disease, an autoimmune condition affecting the thyroid gland, which requires appropriate follow-up. Some research has reported an increased prevalence of autoimmune thyroid disease in patients with GCK-MODY, although further evidence is needed to clarify this association (Calcaterra et al., 2019).</p></article>
+</div>
+</section>
+<section id="next">
+<div class="section-head"><div><h2>What Can We Do Next?</h2></div></div>
+<p class="next-section-intro">Just as musicians practise, adjust their performance, and work with others to refine their music, regular monitoring, personalised care, and family genetic testing can help us better understand your health and guide the next steps.</p>
+<div class="grid-3"><article class="card"><span class="label">01 / MONITORING</span><h3>Monitoring</h3><p>Regular fasting blood glucose and HbA1c testing can help assess glucose control. An oral glucose tolerance test (OGTT) may also be considered when further assessment of glucose tolerance is needed, depending on your clinical situation (Hulín et al., 2020).</p></article><article class="card"><span class="label">02 / MANAGEMENT</span><h3>Personalised Management</h3><p>Patients with confirmed GCK-MODY typically have stable, mildly elevated fasting blood glucose levels and generally do not require glucose-lowering treatment (Hattersley &amp; Patel, 2017). Maintaining a regular daily routine, eating a balanced diet, engaging in regular physical activity, and getting adequate sleep can support overall health.</p></article><article class="card"><span class="label">03 / GENETIC FOLLOW-UP</span><h3>Family Genetic Testing</h3><p>Your three siblings also have elevated fasting blood glucose levels. Genetic counselling and family testing may help determine whether the GCK variant is associated with your family’s blood glucose patterns and whether additional genetic factors may contribute to differences between family members (Maltoni et al., 2015).</p></article></div>
+<div class="card" style="margin-top:16px"><span class="label">KEY TAKEAWAY</span><h3>Your result is a clue, not a final answer</h3><p>Your clinical history and family pattern deserve careful follow-up. The GCK result may be relevant, but the current evidence does not prove that c.208+3A>G causes your elevated blood glucose. Your GCK variant is currently classified as a variant of uncertain significance (VUS). Your healthcare team can combine genetic information with clinical findings and family studies to guide next steps.</p></div>
+</section>
+
+
+</main>
+<script>
+document.querySelectorAll('.accordion').forEach(b=>b.addEventListener('click',()=>{const open=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!open));b.nextElementSibling.classList.toggle('open',!open)}));
+let selectedVersion='normal', audioContext=null, activeNodes=[], playToken=0;
+const normalBtn=document.getElementById('normalBtn'), mutantBtn=document.getElementById('mutantBtn'), playMusicBtn=document.getElementById('playMusicBtn'), stopMusicBtn=document.getElementById('stopMusicBtn'), musicStatus=document.getElementById('musicStatus'), dnaLetter=document.getElementById('dnaLetter'), dnaExplain=document.getElementById('dnaExplain'), changedChord=document.getElementById('changedChord');
+function stopMusic(){playToken++;activeNodes.forEach(n=>{try{n.stop()}catch(e){}});activeNodes=[];musicStatus.textContent='Stopped'}
+function selectVersion(v){stopMusic();selectedVersion=v;const normal=v==='normal';normalBtn.classList.toggle('active',normal);mutantBtn.classList.toggle('active',!normal);normalBtn.setAttribute('aria-pressed',String(normal));mutantBtn.setAttribute('aria-pressed',String(!normal));dnaLetter.textContent=normal?'A':'G';dnaLetter.classList.toggle('variant',!normal);dnaExplain.textContent=normal?'Reference letter':'Variant letter';changedChord.textContent=normal?'C':'Cm';playMusicBtn.textContent=normal?'▶ Play reference':'▶ Play variant';musicStatus.textContent=normal?'Reference example selected':'Variant example selected'}
+normalBtn.addEventListener('click',()=>selectVersion('normal'));mutantBtn.addEventListener('click',()=>selectVersion('mutant'));
+function tone(freq,start,duration){const osc=audioContext.createOscillator(),gain=audioContext.createGain();osc.type='triangle';osc.frequency.value=freq;gain.gain.setValueAtTime(.0001,start);gain.gain.exponentialRampToValueAtTime(.045,start+.04);gain.gain.setValueAtTime(.045,start+duration-.08);gain.gain.exponentialRampToValueAtTime(.0001,start+duration);osc.connect(gain);gain.connect(audioContext.destination);osc.start(start);osc.stop(start+duration+.02);activeNodes.push(osc)}
+async function playProgression(){stopMusic();const token=playToken,AudioCtx=window.AudioContext||window.webkitAudioContext;if(!AudioCtx){musicStatus.textContent='Audio is not supported in this browser.';return}if(!audioContext)audioContext=new AudioCtx();if(audioContext.state==='suspended')await audioContext.resume();const ref=[[220,261.63,329.63],[261.63,329.63,392],[196,246.94,392],[220,261.63,329.63]],mut=[[220,261.63,329.63],[261.63,311.13,392],[196,246.94,392],[220,261.63,329.63]],prog=selectedVersion==='normal'?ref:mut,start=audioContext.currentTime+.06;musicStatus.textContent=selectedVersion==='normal'?'Playing reference progression…':'Playing variant example…';prog.forEach((ch,i)=>ch.forEach(f=>tone(f,start+i*.72,.62)));window.setTimeout(()=>{if(token===playToken){activeNodes=[];musicStatus.textContent='Finished'}},3300)}
+playMusicBtn.addEventListener('click',playProgression);stopMusicBtn.addEventListener('click',stopMusic);
+
+function updateSideMidi(isReference){
+ const noteMap = isReference
+ ? {0:['A3','C4','E4'],1:['C4','E4','G4'],2:['G3','B3','D4'],3:['A3','C4','E4']}
+ : {0:['A3','C4','E4'],1:['C4','Eb4','G4'],2:['G3','B3','D4'],3:['A3','C4','E4']};
+ document.querySelectorAll('.midi-side-lane').forEach(lane=>{
+ const pitch=lane.dataset.pitch;
+ lane.querySelectorAll('i').forEach((cell,index)=>{
+ cell.classList.remove('on','variant-note');
+ if(noteMap[index].includes(pitch)){
+ cell.classList.add(!isReference && index===1 && pitch==='Eb4' ? 'variant-note':'on');
+ }
+ });
+ });
+ const chord=document.getElementById('midiChord2');
+ if(chord) chord.textContent='2 · '+(isReference?'C':'Cm');
+ const label=document.getElementById('changedChord');
+ if(label) label.textContent=isReference?'C':'Cm';
+}
+
+document.getElementById('normalBtn')?.addEventListener('click',()=>updateSideMidi(true));
+document.getElementById('mutantBtn')?.addEventListener('click',()=>updateSideMidi(false));
+updateSideMidi(true);
+
+</script>
+<script>
+
+// Browser-generated short phrases for the three composition examples.
+(function(){
+ const buttons=[...document.querySelectorAll('.composition-play')];
+ const status=document.getElementById('compositionStatus');
+ let audioContext=null, activeNodes=[], stopTimer=null;
+ function stopPhrase(){
+ if(stopTimer){clearTimeout(stopTimer);stopTimer=null;}
+ activeNodes.forEach(node=>{try{node.stop();}catch(e){}});
+ activeNodes=[];
+ buttons.forEach(button=>{button.setAttribute('aria-pressed','false');button.innerHTML='<span aria-hidden="true">▶</span> Play phrase';});
+ }
+ const patterns={
+ calm:{notes:[60,62,64,65,64,62,64,62],durations:[.34,.34,.34,.34,.34,.34,.34,.52],wave:'sine',gap:.04},
+ lively:{notes:[60,69,64,72,62,70,65,74],durations:[.16,.14,.16,.14,.16,.14,.16,.22],wave:'triangle',gap:.06},
+ swing:{notes:[60,64,67,69,67,64,62],durations:[.30,.14,.30,.14,.30,.14,.42],wave:'sine',gap:.07}
+ };
+ // Draw the MIDI preview from the very same pattern data used by playback.
+ // Horizontal position/length represent note onset/duration; vertical position is pitch.
+ function renderPianoRolls(){
+ const low=58, high=76;
+ document.querySelectorAll('.mini-roll-grid').forEach(grid=>{
+ const card=grid.closest('.composition-card');
+ const button=card && card.querySelector('.composition-play');
+ const style=button && button.dataset.style;
+ const pattern=patterns[style];
+ if(!pattern)return;
+ const total=pattern.notes.reduce((sum,n,i)=>sum+pattern.durations[i]+(i<pattern.notes.length-1?pattern.gap:0),0);
+ let cursor=0;
+ grid.innerHTML='';
+ pattern.notes.forEach((midi,i)=>{
+ const note=document.createElement('i');
+ const left=(cursor/total)*100;
+ const width=(pattern.durations[i]/total)*100;
+ const row=((high-midi)/(high-low))*88;
+ note.style.setProperty('--left',left+'%');
+ note.style.setProperty('--width','calc('+width+'% - 3px)');
+ note.style.setProperty('--top','calc('+row+'% - 3px)');
+ note.title='MIDI note '+midi+' · '+pattern.durations[i].toFixed(2)+' s';
+ grid.appendChild(note);
+ cursor+=pattern.durations[i]+pattern.gap;
+ });
+ });
+ }
+ renderPianoRolls();
+
+ function play(style,button){
+ stopPhrase();
+ const Ctx=window.AudioContext||window.webkitAudioContext;
+ if(!Ctx){status.textContent='Audio is not supported in this browser.';return;}
+ if(!audioContext)audioContext=new Ctx();
+ audioContext.resume();
+ const pattern=patterns[style];
+ const start=audioContext.currentTime+.06;
+ let t=start;
+ pattern.notes.forEach((midi,i)=>{
+ const osc=audioContext.createOscillator();
+ const gain=audioContext.createGain();
+ osc.type=pattern.wave;
+ osc.frequency.value=440*Math.pow(2,(midi-69)/12);
+ const dur=pattern.durations[i];
+ const noteGain=style==='lively'?.085:.07;
+ gain.gain.setValueAtTime(.0001,t);
+ gain.gain.linearRampToValueAtTime(noteGain,t+.012);
+ gain.gain.setValueAtTime(noteGain,t+Math.max(.025,dur-.035));
+ gain.gain.exponentialRampToValueAtTime(.0001,t+dur);
+ osc.connect(gain);gain.connect(audioContext.destination);
+ osc.start(t);osc.stop(t+dur+.02);
+ activeNodes.push(osc);
+ t+=dur+pattern.gap;
+ });
+ button.setAttribute('aria-pressed','true');
+ button.innerHTML='<span aria-hidden="true">■</span> Playing…';
+ status.textContent='Playing: '+({lively:'Type 1 diabetes — Lively / Intense',calm:'Type 2 diabetes — Steady',swing:'MODY — Swung'}[style])+'.';
+ stopTimer=setTimeout(()=>{stopPhrase();status.textContent='Choose a style to listen.';},Math.max(500,(t-start)*1000+100));
+ }
+ buttons.forEach(button=>button.addEventListener('click',()=>play(button.dataset.style,button)));
+})();
+
+</script>
+</body>
+</html>
